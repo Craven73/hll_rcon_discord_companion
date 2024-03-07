@@ -21,3 +21,18 @@ __**Event Server Commands**__
 - `!map` <map_name> - flip map to map name
 - `!toggle` - enable and disable command mode
 - `!removecam` - remove all admin cams
+
+### Connect Handler 
+- Handles set idle kick so you don't have to pay for BM
+- When the player count is greater than 85 enable level automod
+
+### Teamswitch Handler
+- Check to see if server is no longer seeded enable seeding automod 
+- If already seeded nothing happens
+- If the server has just crossed seeding threshold
+  - Award vip to all seeders
+  - Notify server is seeded
+  - Disable seeding auto mod rules 
+
+### Match End Handler
+When the match ends check a series of conditions and award vip to all those who qualify. 
